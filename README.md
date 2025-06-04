@@ -1,4 +1,4 @@
-## What makes good instruction data for  LLM Fine-tuning on code intelligence tasks？
+## What Makes Good Instruction Data for LLM Fine-tuning on Code Intelligence Tasks？
 
 This repository contains code and resources for the empirical study on how various instruction data features affect the performance of instruction fine-tuning (IFT) for code large language models (LLMs). The study explores four key research questions (RQs) regarding domain composition, semantic diversity, problem complexity, and task-type coverage.
 
@@ -25,8 +25,7 @@ INSTRUCTIONDATA/
 │   ├── RQ3/
 │   └── RQ4/
 ├── .gitattributes                # Git LFS tracking configuration
-├── README.md
-└── requirements.txt              # Python dependencies
+└── README.md      
 ```
 
 ## 📦 Large File Handling via Git LFS
