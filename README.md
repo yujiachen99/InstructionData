@@ -6,29 +6,42 @@ This repository contains code and resources for the empirical study on how vario
 
 ```bash
 
-├── Code/
-│   ├── RQ1/                        # Domain Composition
-│   │   ├── EVOL/
-│   │   ├── OSS/
-│   │   └── domain_composition.py
-│   ├── RQ2/                        # Semantic Diversity
-│   │   ├── EVOL/
-│   │   ├── OSS/
-│   │   ├── evol_embeddings.pickle
-│   │   ├── oss_embeddings.pickle
-│   │   └── semantic_diversity.py
-│   ├── RQ3/                        # Problem Complexity
-│   │   ├── EVOL/
-│   │   ├── OSS/
+INSTRUCTIONDATA/
+├── Code/                         # Scripts for analyzing the impact of different instruction properties
+│   ├── RQ1/
+│   │   ├── domain_composition.py
+│   ├── RQ2/
+│   │   ├── semantic_diversity.py
+│   ├── RQ3/
 │   │   └── problem_complexity.py
-│   ├── RQ4/                        # Task-type Coverage
-│   │   ├── EVOL/
-│   │   ├── OSS/
+│   ├── RQ4/
 │   │   ├── evol_instruct_with_category.jsonl
 │   │   ├── oss_instruct_with_category.jsonl
 │   │   ├── task_category.py
 │   │   └── type_coverage.py
-├── Datas/                          # Raw and processed instruction datasets
+├── Datas/                        # Raw and split instruction datasets for each RQ
+│   ├── RQ1/
+│   ├── RQ2/
+│   ├── RQ3/
+│   └── RQ4/
+├── .gitattributes                # Git LFS tracking configuration
+├── README.md
+
+
+## 📦 Large File Handling via Git LFS
+
+Some files in this repository (e.g., JSONL datasets and embedding files) are large and thus managed with Git LFS (Large File Storage). This ensures efficient storage and versioning without bloating the Git history.
+
+> 💡 When you clone this repository, Git LFS will automatically download the necessary large files if you have Git LFS installed and initialized:
+
+```bash
+git lfs install          # Run once per machine
+git clone <this-repo>    # LFS files will be pulled automatically
+
+If you already cloned the repo but didn't get the LFS files:
+
+```bash
+git lfs pull
 
 
 ### Model Training and Inference
