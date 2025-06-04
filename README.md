@@ -26,7 +26,8 @@ INSTRUCTIONDATA/
 │   └── RQ4/
 ├── .gitattributes                # Git LFS tracking configuration
 ├── README.md
-
+└── requirements.txt              # Python dependencies
+```
 
 ## 📦 Large File Handling via Git LFS
 
@@ -37,12 +38,13 @@ Some files in this repository (e.g., JSONL datasets and embedding files) are lar
 ```bash
 git lfs install          # Run once per machine
 git clone <this-repo>    # LFS files will be pulled automatically
+```
 
 If you already cloned the repo but didn't get the LFS files:
 
 ```bash
 git lfs pull
-
+```
 
 ### Model Training and Inference
 
