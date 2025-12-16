@@ -1,0 +1,35 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+
+# Embedding models
+InstructorEmbedding>=1.0.0
+sentence-transformers>=2.2.0
+
+# Vector similarity search
+faiss-cpu>=1.7.4  # Use faiss-gpu for GPU support
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+pandas>=2.0.0
+
+# Data processing
+datasets>=2.12.0
+tqdm>=4.65.0
+
+# Additional utilities
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# For evaluation
+bigcode-eval>=0.1.0  # BigCode Evaluation Harness
+
+# Optional: vLLM for faster inference (recommended for large-scale experiments)
+# vllm>=0.2.0  # Uncomment if you want to use vLLM for complexity scoring
+
+# Note: For training, install LLaMA-Factory separately:
+# pip install git+https://github.com/hiyouga/LLaMA-Factory.git
+
