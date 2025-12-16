@@ -1,6 +1,6 @@
-### What Makes Effective Knowledge Distillation for Large Language Models in Code Generation?
+## What Makes Effective Knowledge Distillation for Large Language Models in Code Generation?
 
-This repository contains code and resources for the empirical study on how various characteristics of seed knowledge affect the effectiveness of knowledge distillation (KD) for code generation. The study systematically investigates four key research questions (RQs) regarding knowledge complexity, task composition, semantic diversity, and cross-domain knowledge.
+This repository contains code and resources for the empirical study on how various characteristics of seed knowledge affect the effectiveness of knowledge distillation (KD) for code generation. The study systematically investigates four key research questions (RQs).
 
 
 ### 🔍 Research Questions
